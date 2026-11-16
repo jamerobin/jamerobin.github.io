@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Paper Title] — [Your Name]</title>
+  <meta name="description" content="[One sentence on what the paper shows.]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="container site-header">
+    <a class="back-link" href="../index.html#work">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      <span>[Your Name] · All research</span>
+    </a>
+    <nav aria-label="Paper sections">
+      <a href="#abstract">Abstract</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#bibtex">Citation</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Title block ===== -->
+    <section class="paper-head">
+      <h1>[Paper Title Goes Here, Across One or Two Lines]</h1>
+
+      <!-- Superscripts match the numbered affiliations below. Add href to link each author's homepage. -->
+      <div class="authors">
+        <div class="row">
+          <a class="me" href="../index.html">[Your Name]<sup>1</sup></a>
+          <a href="#">[Co-author]<sup>1,2</sup></a>
+          <a href="#">[Co-author]<sup>1</sup></a>
+        </div>
+        <div class="row">
+          <a href="#">[Co-author]<sup>2</sup></a>
+          <a href="#">[Advisor]<sup>1</sup></a>
+        </div>
+      </div>
+
+      <div class="affils">
+        <span><sup>1</sup> [University, Department]</span>
+        <span><sup>2</sup> [Lab or Company]</span>
+      </div>
+
+      <span class="venue">[Venue Year]</span>
+      <span class="corr">Correspondence: <a href="mailto:[you@example.com]">[your email]</a></span>
+
+      <div class="paper-btns">
+        <a class="paper-btn" href="[https://arxiv.org/abs/...]">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3h7v7M10 14L21 3M21 14v7H3V3h7"/></svg>arXiv</a>
+        <!-- Put the PDF at assets/papers/paper-2.pdf, or link to the publisher -->
+        <a class="paper-btn" href="../assets/papers/paper-2.pdf">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>PDF</a>
+        <!-- When code is ready: remove "disabled" and aria-disabled, set the href, change the label to "Code" -->
+        <a class="paper-btn disabled" aria-disabled="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>Code (coming soon)</a>
+        <a class="paper-btn" href="#bibtex">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 7h4v4H7zM13 7h4v4h-4M7 11c0 3-1 5-3 6M13 11c0 3-1 5-3 6"/></svg>BibTeX</a>
+      </div>
+    </section>
+
+    <!-- ===== Teaser ===== -->
+    <section class="paper-section">
+      <figure>
+        <!-- Replace with <img class="media" src="../assets/img/paper-2-teaser.jpg" alt="..."> or a <video class="media" autoplay muted loop playsinline src="..."></video> -->
+        <div class="placeholder" style="height:440px">[Teaser figure or video — the one image that sums up the paper]</div>
+        <figcaption class="tldr"><strong>TL;DR:</strong> [One sentence on what the paper shows.]</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== Abstract ===== -->
+    <section id="abstract" class="paper-section narrow">
+      <h2>Abstract</h2>
+      <p class="justify">[Paste your abstract here. Typically 150–250 words: the problem and why it matters, the gap in existing work, your approach, the main results, and the broader implication.]</p>
+    </section>
+
+    <!-- ===== Method ===== -->
+    <section id="method" class="paper-section">
+      <h2>Method</h2>
+      <figure>
+        <div class="placeholder" style="height:380px">[Method overview diagram — architecture, experimental setup or pipeline]</div>
+      </figure>
+      <p class="prose">[Explain the approach in plain language, a paragraph or two. Point readers to the figure above.]</p>
+    </section>
+
+    <!-- ===== Results ===== -->
+    <section id="results" class="paper-section">
+      <h2>Results</h2>
+      <div class="fig-grid">
+        <figure>
+          <div class="placeholder" style="height:280px">[Result figure 1]</div>
+          <figcaption>[Caption: what this figure shows]</figcaption>
+        </figure>
+        <figure>
+          <div class="placeholder" style="height:280px">[Result figure 2]</div>
+          <figcaption>[Caption: what this figure shows]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== BibTeX ===== -->
+    <section id="bibtex" class="paper-section">
+      <div class="bib-head">
+        <h2>BibTeX</h2>
+        <button type="button" class="copy-btn" data-copy-target="bibtex-code">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+          <span>Copy</span>
+        </button>
+      </div>
+<pre class="bibtex"><code id="bibtex-code">@inproceedings{[key],
+  title     = {[Paper Title]},
+  author    = {[Your Name] and [Co-author] and [Advisor]},
+  booktitle = {[Venue]},
+  year      = {[Year]}
+}</code></pre>
+    </section>
+  </main>
+
+  <footer class="paper-footer">
+    <div class="container">
+      <a href="../index.html#work">← Back to all research</a>
+      <span>© [Year] [Your Name]</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
